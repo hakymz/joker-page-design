@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Viga", sans-serif;
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+nav {
+  width: 100%;
+  margin-top: 25px;
+  position: absolute;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.logo {
+  flex: 2;
+  height: 100%;
+  display: flex;
+}
+
+.logo img {
+  align-self: center;
+  height: 40px;
+  margin-left: 40px;
+}
+
+.list-items {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding-right: 70px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 3px;
+  background: white;
+  transition: 0.4s;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+.main {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.main-left {
+  position: absolute;
+  padding-left: 50px;
+  width: 35%;
+  height: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 130px;
+  box-shadow: 30px 0px 30px 0px black;
+  z-index: 1;
+}
+
+.m-text {
+  color: #dedede;
+  width: 100%;
+}
+
+.m-text p {
+  padding: 5px 0px;
+  letter-spacing: 3px;
+}
+
+.m-text h1 {
+  font-size: 4.5vw;
+  line-height: 3.5rem;
+}
+
+.m-btn {
+  margin: 40px 0px;
+  width: 100%;
+}
+
+.btn {
+  margin-right: 10px;
+  color: black;
+  text-decoration: none;
+  background: white;
+  padding: 0.8rem;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.btn-secondary {
+  background: black;
+  color: white;
+  border: 1px solid white;
+  transition: 0.4s;
+}
+
+.btn-secondary i {
+  margin-right: 5px;
+}
+
+.btn-secondary:hover {
+  color: black;
+  background: white;
+}
+
+.main-right {
+  position: absolute;
+  height: 100%;
+  width: 65%;
+  right: 0;
+}
+
+.bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.side-bar {
+  position: absolute;
+  width: 70px;
+  height: 100%;
+  right: 0;
+  background: black;
+  box-shadow: -30px 0px 30px 0px black;
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  position: absolute;
+  top: 38px;
+  color: white;
+  font-size: 20px;
+}
+
+.social-btns {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.s-btn {
+  color: white;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.arrow {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  bottom: 30px;
+}
+.s-text {
+  color: white;
+  position: absolute;
+  bottom: 100px;
+  font-size: 10px;
+  transform: translateX(6px) rotateZ(270deg);
+  transform-origin: bottom;
+}
